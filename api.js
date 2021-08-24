@@ -27,3 +27,8 @@ function create() {
     password.value = '';
     status.innerHTML = 'Account Created';
 }
+
+function allData() {
+    const status = document.getElementById('allDataStatus');
+    status.innerHTML = JSON.stringify(ctx.accounts);
+}
