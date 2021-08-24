@@ -39,7 +39,7 @@ ui.createAccount = `
         <div class="card-header">Create Account</div>
         <div class="card-body">
             Name<br>
-            <input type="input" class="form-control" id=name" placeholder="Enter name"><br>
+            <input type="input" class="form-control" id="name" placeholder="Enter name"><br>
             Email address<br>
             <input type="input" class="form-control" id="email" placeholder="Enter email"><br>
             Password<br>
@@ -149,4 +149,4 @@ var loadAllData = function() {
     target.innerHTML = ui.allData;
 };
 
-loadCreateAccount();
+defaultModule();
