@@ -44,7 +44,7 @@ ui.createAccount = `
             <input type="input" class="form-control" id="email" placeholder="Enter email"><br>
             Password<br>
             <input type="password" class="form-control" id="password" placeholder="Enter password"><br>
-            <button type="submit" id="submit" class="btn" onclick="create()">Create Account</button>
+            <button type="submit" id="submit" class="btn bg-light" onclick="create()">Create Account</button>
             <div id='createStatus'></div>
         </div>
     </div>
@@ -58,7 +58,7 @@ ui.login = `
             <input type="input" class="form-control" id="loginEmail" placeholder="Enter email"><br>
             Password<br>
             <input type="password" class="form-control" id="loginPassword" placeholder="Enter password"><br>
-            <button type="submit" id="submit" class="btn" onclick="login()">Login</button>
+            <button type="submit" id="submit" class="btn bg-light" onclick="login()">Login</button>
             <div id='loginStatus'></div>
         </div>
     </div>
@@ -72,7 +72,7 @@ ui.deposit = `
             <input type="input" class="form-control" id="depositEmail" placeholder="Enter email"><br>
             Amount<br>
             <input type="number" class="form-control" id="depositAmount" placeholder="Enter amount"><br>
-            <button type="submit" class="btn" onclick="deposit()">Deposit</button>
+            <button type="submit" class="btn bg-light" onclick="deposit()">Deposit</button>
             <div id='depositStatus'></div>
         </div>
     </div>
@@ -86,7 +86,7 @@ ui.withdraw = `
             <input type="input" class="form-control" id="withdrawEmail" placeholder="Enter email"><br>
             Amount<br>
             <input type="number" class="form-control" id="withdrawAmount" placeholder="Enter amount"><br>
-            <button type="submit" class="btn" onclick="withdraw()">Withdraw</button>
+            <button type="submit" class="btn bg-light" onclick="withdraw()">Withdraw</button>
             <div id='withdrawStatus'></div>
         </div>
     </div>
@@ -98,7 +98,7 @@ ui.balance = `
         <div class="card-body">
             Email<br>
             <input type="input" class="form-control" id="balanceEmail" placeholder="Enter email"><br>
-            <button type="submit" class="btn" onclick="balance()">Show Balance</button>
+            <button type="submit" class="btn bg-light" onclick="balance()">Show Balance</button>
             <div id='balanceStatus'></div>
         </div>
     </div>
@@ -149,4 +149,4 @@ var loadAllData = function() {
     target.innerHTML = ui.allData;
 };
 
-defaultModule();
+loadCreateAccount();
